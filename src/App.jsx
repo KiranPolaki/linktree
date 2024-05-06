@@ -1,15 +1,20 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
-import { TopBar } from "./pages/TopBar";
-import { Links } from "./pages/Links";
-import { Intro } from "./pages/Intro";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Headers } from "./pages/Headers";
+import { LinkTree } from "./pages/LinkTree";
+import { CreateTree } from "./pages/CreateTree";
 
 function App() {
   return (
-    <>
-      <TopBar />
-      <Intro />
-      <Links />
-    </>
+    <BrowserRouter>
+      <Headers />
+      <Routes>
+        <Route to={"/"}></Route>
+      </Routes>
+      <LinkTree />
+      <CreateTree />
+    </BrowserRouter>
   );
 }
 
