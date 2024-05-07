@@ -3,10 +3,11 @@ import { Intro } from "../components/Intro.jsx";
 
 function LinkTree() {
   return (
-    <div>
-      Linktree
-      <Intro />
-      <Links />
+    <div className="container">
+      <div className="card">
+        <Intro />
+        <Links />
+      </div>
     </div>
   );
 }
