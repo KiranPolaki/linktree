@@ -1,5 +1,5 @@
 function Links() {
-  return <div></div>;
+  return <div>Links</div>;
 }
 
 export { Links };
