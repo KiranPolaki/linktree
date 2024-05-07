@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
+import { ShimmerLinks } from "./ShimmerLinks";
 
 function Links() {
   const [links, setLinks] = useState([
@@ -13,18 +14,31 @@ function Links() {
       name: "twitter",
       link: "https://x.com",
     },
+    {
+      id: 3,
+      name: "git",
+      link: "https://github.com",
+    },
   ]);
   return (
     <div className="links-container">
-      {links.map((link) => {
-        return (
-          <div key="link?.id">
-            <a href={link?.link}>
+      {links.length === 0 ? (
+        <ShimmerLinks />
+      ) : (
+        links.map((link) => {
+          return (
+            <a
+              href={link?.link}
+              target="_blank"
+              key="link?.id"
+              className="links"
+            >
               <img src={`${link?.link}/favicon.ico`} width="25" height="25" />
             </a>
-          </div>
-        );
-      })}
+          );
+        })
+      )}
+      {}
     </div>
   );
 }

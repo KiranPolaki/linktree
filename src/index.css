@@ -59,4 +59,15 @@ body {
   background-color: #f86a57;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 0px;
+  flex-wrap: wrap;
+}
+
+.links-sh {
+  background-color: #f6d7a5;
+  width: 5px;
+  height: 5px;
 }
