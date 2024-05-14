@@ -74,4 +74,16 @@ body {
 
 .input-container {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 5px;
+}
+
+.create-continer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
