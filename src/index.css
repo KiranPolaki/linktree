@@ -63,7 +63,7 @@ body {
   background: #fff;
   user-select: none;
   cursor: pointer;
-  color: #207ed1;
+  color: #f86a57;
   transition: all 1s;
   border-top-right-radius: 11px;
   border-top-left-radius: 11px;
@@ -90,6 +90,33 @@ body {
   gap: 4px;
   padding: 12px 0px;
   flex-wrap: wrap;
+}
+
+.sample-links-container {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.sample-link {
+  background-color: #f86a57;
+  display: flex;
+  padding: 6px;
+  width: 80%;
+  border-radius: 12px;
+}
+
+.sample {
+  text-decoration: none;
+  color: #fff;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
 }
 
 .links-sh {
