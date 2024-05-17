@@ -15,7 +15,7 @@ function SampleIntro({ sampleTree }) {
           style={{ display: "none" }}
         />
         <label htmlFor="image-file" className="image-input">
-          Upload a nice cover
+          + Upload a nice cover
         </label>
       </div>
       <div className="intro-box">

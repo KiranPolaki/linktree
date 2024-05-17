@@ -12,7 +12,9 @@ function Input({ sampleTree, setSampleTree, links, setLinks }) {
     setInputLink("");
   }
 
-  function handleSave() {}
+  function handleSave() {
+    // * save this data somewhere so that we can always have a look at this while shufting to other cards
+  }
 
   return (
     <div className="input-container">
