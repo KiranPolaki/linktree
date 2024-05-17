@@ -101,6 +101,7 @@ body {
 .input-container {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   height: 100%;
   width: 50%;
@@ -144,10 +145,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 24px;
+  padding: 14px;
   border-radius: 4px;
-  height: 224px;
+  height: 150px;
   font-family: "Roboto Mono", monospace;
+}
+
+.links-card {
+  width: 294px;
+  background-color: aliceblue;
+  padding: 24px;
 }
 
 input {
@@ -172,4 +179,14 @@ input {
   background-color: #f6d7a5;
   padding: 7px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  border: none;
+  background-color: #f6d7a5;
+  padding: 7px;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
 }

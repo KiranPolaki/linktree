@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 
-function SampleIntro() {
+function SampleIntro({ sampleTree }) {
   const [image, setImage] = useState("/retro1.jpg");
-  const [name, setName] = useState("{name}");
 
   return (
     <div className="intro-container">
@@ -19,8 +19,13 @@ function SampleIntro() {
         </label>
       </div>
       <div className="intro-box">
-        <h2>{name}</h2>
-        <p>{"{ about you }"}</p>
+        <h2>{sampleTree?.name === "" ? "{name}" : sampleTree?.name}</h2>
+        <p>{sampleTree?.bio === "" ? "{ about you }" : sampleTree?.bio}</p>
+        <p>
+          {sampleTree?.experience === ""
+            ? "{ Exp in tech / role }"
+            : sampleTree.experience}
+        </p>
       </div>
     </div>
   );
