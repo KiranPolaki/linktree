@@ -7,13 +7,14 @@ import { Signup } from "./pages/Signup.jsx";
 import { Edit } from "./pages/Edit.jsx";
 import { CreateTree } from "./pages/CreateTree.jsx";
 import { Home } from "./components/Home.jsx";
+import { Landing } from "./pages/Landing.jsx";
 
 function App() {
   return (
     <BrowserRouter>
       <Home />
       <Routes>
-        <Route path="/home" element={<LinkTree />}></Route>
+        <Route path="/" element={<Landing />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/edit" element={<Edit />}></Route>
         <Route path="/create" element={<CreateTree />}></Route>
